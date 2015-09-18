@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmi:id="_I38w4VlTEd-nu8Ws9B6GVw" name="Package">
+  <elementImport xmi:id="_I92kkFlTEd-nu8Ws9B6GVw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_JD130FlTEd-nu8Ws9B6GVw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_JD130VlTEd-nu8Ws9B6GVw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_JD130llTEd-nu8Ws9B6GVw">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_MS84IFlTEd-nu8Ws9B6GVw" name="Cell">
+    <generalization xmi:id="_25lK0FuXEd-1WsOBadlT2A" general="_0cjHsFuXEd-1WsOBadlT2A"/>
+    <ownedAttribute xmi:id="_aDIxsFucEd-1WsOBadlT2A" name="Image" aggregation="composite"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Psx6sFlTEd-nu8Ws9B6GVw" name="Obstacle" clientDependency="_3T7LYFvBEd-1WsOBadlT2A" isAbstract="true">
+    <ownedAttribute xmi:id="_o0kl4FvBEd-1WsOBadlT2A" name="Image" aggregation="composite"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_RKWr8FlTEd-nu8Ws9B6GVw" name="Terrain" clientDependency="_12eggFvCEd-1WsOBadlT2A" isAbstract="true">
+    <ownedAttribute xmi:id="_p_drsFvBEd-1WsOBadlT2A" name="Image" aggregation="composite"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Y6_9wFlTEd-nu8Ws9B6GVw" name="Forest">
+    <generalization xmi:id="_52tw4FlTEd-nu8Ws9B6GVw" general="_RKWr8FlTEd-nu8Ws9B6GVw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_aO4AcFlTEd-nu8Ws9B6GVw" name="Mountain" isAbstract="true">
+    <generalization xmi:id="_G83HwFlUEd-nu8Ws9B6GVw" general="_RKWr8FlTEd-nu8Ws9B6GVw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_bGfk8FlTEd-nu8Ws9B6GVw" name="Building">
+    <generalization xmi:id="_HXue0FlUEd-nu8Ws9B6GVw" general="_RKWr8FlTEd-nu8Ws9B6GVw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_bv_N4FlTEd-nu8Ws9B6GVw" name="Street">
+    <generalization xmi:id="_H8uCQFlUEd-nu8Ws9B6GVw" general="_RKWr8FlTEd-nu8Ws9B6GVw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_cpRmUFlTEd-nu8Ws9B6GVw" name="BigMountain">
+    <generalization xmi:id="_Ia-EgFlUEd-nu8Ws9B6GVw" general="_aO4AcFlTEd-nu8Ws9B6GVw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_eMj-AFlTEd-nu8Ws9B6GVw" name="SmallMountain">
+    <generalization xmi:id="_I8HCsFlUEd-nu8Ws9B6GVw" general="_aO4AcFlTEd-nu8Ws9B6GVw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_lDc9UFlTEd-nu8Ws9B6GVw" name="Unit" isAbstract="true">
+    <generalization xmi:id="_Of5SwFxyEd-dKMF-TLti-w" general="_G_omUFxyEd-dKMF-TLti-w"/>
+    <ownedAttribute xmi:id="_44-rYFlVEd-nu8Ws9B6GVw" name="attack" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EInt"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_trmQ0F-TEd-tqKuRMElIHw" name="speed" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EInt"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vfdbIF-TEd-tqKuRMElIHw" name="accuracy" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EInt"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wzkHUF-TEd-tqKuRMElIHw" name="maxRange" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EInt"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_xbeb4F-TEd-tqKuRMElIHw" name="minRange" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EInt"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_y5WvIF-TEd-tqKuRMElIHw" name="defense" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EInt"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_xpkT0FlUEd-nu8Ws9B6GVw" name="move" isAbstract="true"/>
+    <ownedOperation xmi:id="_cAFNcFlVEd-nu8Ws9B6GVw" name="attack" isAbstract="true"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_mRonsFlTEd-nu8Ws9B6GVw" name="Zerg" isAbstract="true">
+    <generalization xmi:id="_DBjv0FlUEd-nu8Ws9B6GVw" general="_lDc9UFlTEd-nu8Ws9B6GVw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_nCI3kFlTEd-nu8Ws9B6GVw" name="Terran" isAbstract="true">
+    <generalization xmi:id="_EiEgUFlUEd-nu8Ws9B6GVw" general="_lDc9UFlTEd-nu8Ws9B6GVw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_p1nr0FlTEd-nu8Ws9B6GVw" name="Protoss" isAbstract="true">
+    <generalization xmi:id="_FECk8FlUEd-nu8Ws9B6GVw" general="_lDc9UFlTEd-nu8Ws9B6GVw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_rvJZQFlTEd-nu8Ws9B6GVw" name="Zergling">
+    <generalization xmi:id="_FmrX8FlUEd-nu8Ws9B6GVw" general="_mRonsFlTEd-nu8Ws9B6GVw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_uGBxEFlTEd-nu8Ws9B6GVw" name="Marine">
+    <generalization xmi:id="_GDTCgFlUEd-nu8Ws9B6GVw" general="_nCI3kFlTEd-nu8Ws9B6GVw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_wYHIcFlTEd-nu8Ws9B6GVw" name="Zealot">
+    <generalization xmi:id="_GgTuoFlUEd-nu8Ws9B6GVw" general="_p1nr0FlTEd-nu8Ws9B6GVw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_0cjHsFuXEd-1WsOBadlT2A" name="Map" clientDependency="_2j1ngFubEd-1WsOBadlT2A">
+    <ownedAttribute xmi:id="_O6feoF-UEd-tqKuRMElIHw" name="map" aggregation="composite"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_NenokFuZEd-1WsOBadlT2A" name="TerrainType">
+    <ownedLiteral xmi:id="_gVwGoFuZEd-1WsOBadlT2A" name="Forest"/>
+    <ownedLiteral xmi:id="_hkUykFuZEd-1WsOBadlT2A" name="BigMountain"/>
+    <ownedLiteral xmi:id="_jlJa0FuZEd-1WsOBadlT2A" name="SmallMountain"/>
+    <ownedLiteral xmi:id="_k9siIFuZEd-1WsOBadlT2A" name="Building"/>
+    <ownedLiteral xmi:id="_l5tecFuZEd-1WsOBadlT2A" name="Street"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_POlKUFuZEd-1WsOBadlT2A" name="ObstacleType">
+    <ownedLiteral xmi:id="_3S_ecFuZEd-1WsOBadlT2A" name="Unit"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_QwfB8FuZEd-1WsOBadlT2A" name="UnitType">
+    <ownedLiteral xmi:id="_WnIFMFuZEd-1WsOBadlT2A" name="Marine"/>
+    <ownedLiteral xmi:id="_Xti6sFuZEd-1WsOBadlT2A" name="Zergling"/>
+    <ownedLiteral xmi:id="_dVKqgFuZEd-1WsOBadlT2A" name="Zealot"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_qow8oFubEd-1WsOBadlT2A" name="GameState" clientDependency="_13NLAFubEd-1WsOBadlT2A"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_tSgmEFubEd-1WsOBadlT2A" name="Game"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_13NLAFubEd-1WsOBadlT2A" name="has-a" supplier="_tSgmEFubEd-1WsOBadlT2A" client="_qow8oFubEd-1WsOBadlT2A"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_2j1ngFubEd-1WsOBadlT2A" name="has-a" supplier="_tSgmEFubEd-1WsOBadlT2A" client="_0cjHsFuXEd-1WsOBadlT2A"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_rwBqYFvBEd-1WsOBadlT2A" name="Unit"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_3T7LYFvBEd-1WsOBadlT2A" supplier="_MS84IFlTEd-nu8Ws9B6GVw" client="_Psx6sFlTEd-nu8Ws9B6GVw"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_12eggFvCEd-1WsOBadlT2A" supplier="_MS84IFlTEd-nu8Ws9B6GVw" client="_RKWr8FlTEd-nu8Ws9B6GVw"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_G_omUFxyEd-dKMF-TLti-w" name="HP">
+    <generalization xmi:id="_PRjZMFxyEd-dKMF-TLti-w" general="_Psx6sFlTEd-nu8Ws9B6GVw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_H0FiEFxyEd-dKMF-TLti-w" name="Base">
+    <generalization xmi:id="_Svgt0FxyEd-dKMF-TLti-w" general="_G_omUFxyEd-dKMF-TLti-w"/>
+  </packagedElement>
+</uml:Package>
